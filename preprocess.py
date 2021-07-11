@@ -9,9 +9,9 @@ def preprocess(x):
     A0 ---- (n,m).
     '''
     
-    A0 = []
+    A0 = np.ones([1,x.shape[1]])
     
-    for i in range(4):
-        A0 = np.vstack( (A0,np.power(X,3-i)) )
+    for i in range(3):
+        A0 = np.vstack( (A0,np.power(x,3-i)) )
     
     return A0
