@@ -12,6 +12,6 @@ def preprocess(x):
     A0 = []
     
     for i in range(4):
-        A0 = np.vstack( (A0,np.power(X,4-i)) )
+        A0 = np.vstack( (A0,np.power(X,3-i)) )
     
     return A0
