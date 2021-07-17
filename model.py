@@ -1,14 +1,11 @@
-#!/usr/bin/env python
 # coding: utf-8
-
-# In[2]:
-
 
 import preprocess
 import numpy as np
 import cost
 import backpropagation
 import linear_forward
+
 def model(x,y,iteration,learning_rate):
     '''
     This function put everything together
@@ -43,6 +40,6 @@ def model(x,y,iteration,learning_rate):
         #store data in cache
         cache['cost'].append(costs)
         cache['dW1'].append(dW1)
-        
-        return cache,W1
+
+    return cache,W1
 

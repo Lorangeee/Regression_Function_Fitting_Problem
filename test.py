@@ -1,12 +1,9 @@
-#!/usr/bin/env python
 # coding: utf-8
-
-# In[2]:
-
 
 import numpy as np
 import json
 import model
+import matplotlib.pyplot as plt
 
 x = np.random.randn(1,100)
 y = np.power(x,2)+x+1
@@ -31,9 +28,8 @@ def text_save(filename, data):#filename为写入CSV文件的路径，data为要�
 
 text_save('/Users/lorange/Desktop/test_data.txt',W1)
 
-
-# In[ ]:
-
+plt.scatter(range(1,11),costs['cost'][0:10],c ='b')
+plt.show()
 
 
 
